@@ -13,3 +13,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Function to open the login form
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+// Function to close the login form
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+function validateForm() {
+    var email = document.forms["myForm"]["email"].value;
+    var password = document.forms["myForm"]["psw"].value;
+    if (email == "" || password == "") {
+        alert("Email and Password must be filled out");
+        return false;
+    }
+    return true;
+}
