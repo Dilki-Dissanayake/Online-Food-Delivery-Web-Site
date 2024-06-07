@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo" />
+            <img src="logo.png"/>
         </div>
         <nav class="topnav">
             <ul>
@@ -62,10 +62,130 @@
         </section>
         
 
-        <section id="menu" class="section">
-            <h2>Our Menu</h2>
-            <p>Explore our wide range of delicious meals.</p>
+        <section id="menu" class="menu">
+            <div class="slideshow-container">
+                <!-- Slide 1 - Welcome -->
+                <div class="mySlides fade">
+                    <div class="menumain">
+                        <div class="contentbox">
+                            <h2>Welcome to Our Menu!</h2>
+                            <div class="img">
+                                <div>
+                                    <img src="assets/img01.jpeg" alt="Dish 1" width="200vw" height="300vh" /><br>
+                                    <button onclick="showSlide(1)">Italian</button>
+                                </div>
+                                <div>
+                                    <img src="assets/img02.jpeg" alt="Dish 2" width="200vw" height="300vh" /><br>
+                                    <button onclick="showSlide(2)">Korean</button>
+                                </div>
+                                <div>
+                                    <img src="assets/img06.jpeg" alt="Dish 3" width="200vw" height="300vh" /><br>
+                                    <button onclick="showSlide(3)">Sri Lankan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 2 - Italian -->
+                <div class="mySlides fade">
+                    <div class="Italian">
+                        <div class="tophead"></div>
+                        <br />
+                        <h3>Italian Foods</h3>
+                        <div class="responsive">
+                            <div>
+                                <img src="assets/Italian pizza.jpg" alt="Italian pizza" width="200vw" height="300vh" />
+                                <p>Italian pizza<br />8.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Pasta.jpg" alt="Pasta" width="200vw" height="300vh" />
+                                <p>Pasta<br />5.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Lasagna.jpg" alt="Lasagna" width="200vw" height="300vh" />
+                                <p>Lasagna<br />7.0 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Spaghetti.jpg" alt="Spaghetti" width="200vw" height="300vh" />
+                                <p>Spaghetti<br />6.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Burger.jpg" alt="Burger" width="200vw" height="300vh" />
+                                <p>Burger<br />5.0 $</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 3 - Korean -->
+                <div class="mySlides fade">
+                    <div class="Korean">
+                        <div class="tophead"></div>
+                        <br />
+                        <h3>Korean Foods</h3>
+                        <div class="responsive">
+                            <div>
+                                <img src="assets/Ramen.jpg" alt="Ramen" width="200vw" height="300vh" />
+                                <p>Ramen<br />7.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Kimchi.jpg" alt="Kimchi" width="200vw" height="300vh" />
+                                <p>Kimchi<br />6.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Bibimbap.jpg" alt="Bibimbap" width="200vw" height="300vh" />
+                                <p>Bibimbap<br />8.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Kimbap.jpg" alt="Kimbap" width="200vw" height="300vh" />
+                                <p>Kimbap<br />5.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Bulgogi.jpg" alt="Bulgogi" width="200vw" height="300vh" />
+                                <p>Bulgogi<br />6.0 $</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 4 - Sri Lankan -->
+                <div class="mySlides fade">
+                    <div class="Sri Lankan">
+                        <div class="tophead"></div>
+                        <br />
+                        <h3>Experience the vibrant flavors of Sri Lankan cuisine like never before!</h3>
+                        <div class="responsive">
+                            <div>
+                                <img src="assets/Rice & Curry.jpeg" alt="Rice & Curry" width="200vw" height="300vh" />
+                                <p>Rice & Curry<br />3.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/kottu.jpg" alt="Kottu" width="200vw" height="300vh" />
+                                <p>Kottu<br />6.0 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/String Hoppers.jpeg" alt="String Hoppers" width="200vw" height="300vh" />
+                                <p>String Hoppers<br />1.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Fried Rice.jpg" alt="Fried Rice" width="200vw" height="300vh" />
+                                <p>Fried Rice<br />6.5 $</p>
+                            </div>
+                            <div>
+                                <img src="assets/Hoppers.jpeg" alt="Hoppers" width="200vw" height="300vh" />
+                                <p>Hoppers<br />1.5 $</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </section>
+        
 
         <section id="order" class="section">
             <h2>Place Your Order</h2>
