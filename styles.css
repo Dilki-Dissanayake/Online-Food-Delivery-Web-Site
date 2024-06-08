@@ -408,43 +408,127 @@ p {
   margin-top: 15ch;
 }
 
-.order .secform {
-  width: 28vw;
-  height: 70vh;
-  margin-left: 75ch;
-  margin-top: -65ch;
-  background-color: black;
-  padding-top: 2ch;
-  border-radius: 4ch;
-
+.form-container-new {
+  max-width: 350px;
+  height: 420px;
+  margin: -60ch 0 0 85ch;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
 }
-
-.order .secform label {
-  width: 25vw;
-  border: none;
-  margin: 10px;
-  padding: 2ch;
-  color: #e1dcdc;
-  
+.form-container-new label {
+  margin-bottom: 10px;
+  display: block;
 }
-
-.order .secform input {
-  width: 22vw;
-  padding: 3ch;
-  border: none;
-  background: #f1f1f1;
-  margin: 18px;
+.form-container-new input[type=text], .form-container input[type=number], .form-container input[type=address] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-
-.order .secform .btn {
-  background-color: #d49696;
+.btn {
+  width: 100%;
+  background-color: #4CAF50;
   color: white;
-  padding: 7px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  width: 35%;
-  margin: 27.2px;
+}
+.btn:hover {
+  background-color: #45a049;
 }
 
-.order .secform .btn:hover {
-  background-color: #555;
+.about-us {
+  text-align: center;
+  padding: 10px;
+  background-image: url(assets/backgroundphoto.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
+
+.aboutsec{
+  width: 80vw;
+  height: 70vh;
+  background-color: rgb(17, 16, 16);
+  margin:12ch 0 0 15ch ;
+  border-radius: 4ch;
+}
+
+.about {
+  background:none;
+  height: 70vh;
+  width: 25vw;
+  margin: 12ch 3ch 0 6ch;
+  padding: 4ch;
+}
+
+.about-us h2 {
+  margin-top: 12px;
+}
+
+.about-us p {
+  max-width: 500px;
+  margin-top: 60px;
+}
+
+.members{
+  background:none;
+  height: 70vh;
+  width: 55vw;
+  margin: -63ch 0 0 50ch;
+  padding: 2ch;
+}
+
+.members p{
+  font-size: 24px;
+  margin-left: 7ch;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 6ch;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-member img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.team-member.head-chef img {
+  width: 170px;
+  height: 170px;
+}
+.member-name {
+  margin-top: 8ch;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+
+
+
+

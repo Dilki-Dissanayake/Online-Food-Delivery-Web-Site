@@ -49,14 +49,16 @@
                         </button>
                     </div>
 
-                    <form action="/action_page.php" class="form-container" name="myForm" onsubmit="return validateForm()" method="post">
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required />
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required />
-                        <button type="submit" class="btn">Login</button>
-                        <button type="reset" class="btn">Reset</button>
-                    </form>
+                    <div class="loginForm" id="loginForm">
+                        <form class="form-container" name="loginForm" onsubmit="return validateLoginForm()" method="post">
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required />
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required />
+                            <button type="submit" class="btn">Login</button>
+                            <button type="reset" class="btn">Reset</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,24 +196,48 @@
                 <p>Dive into our mouthwatering menu and order your favorites with just a few clicks. From sizzling steaks to savory pasta dishes, we've got something to satisfy every craving. Place your order now and let us bring the flavors of our kitchen straight to your doorstep.</p>
             </div>
 
-            <div class="secform" id="Secform">
-                <form action="/action_page.php" class="form-container-new" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="orderForm" id="orderForm">
+                <form  class="form-container-new" name="orderForm" onsubmit="return validateOrderForm()" method="post">
                     <label for="name"><b>Food Item</b></label>
                     <input type="text" placeholder="Enter Food Item" name="foodname" required>
                     <label for="number"><b>Contact Number</b></label>
                     <input type="number" placeholder="Enter Contact Number" name="number" required>
                     <label for="address"><b>Address</b></label>
-                    <input type="address" placeholder="Enter your address" name="address" required>
-                    <button type="submit" class="btn">submit</button>
+                    <input type="text" placeholder="Enter your address" name="address" required>
+                    <button type="submit" class="btn">Submit</button>
                     <button type="reset" class="btn">Reset</button>
                 </form>
             </div>
+            
+            
         </section>
 
-        <section id="about-us" class="section">
-            <h2>About Us</h2>
-            <p>Learn more about our story and mission.</p>
-        </section>
+        <section id="about-us" class="about-us">
+            <div class="aboutsec">
+            <div class="about">
+              <h2>About Us</h2>
+              <p>
+                  Welcome to DIL RESTAURANT ! We're passionate about delivering delicious food straight to your doorstep. With a diverse menu and a commitment to excellence, we make ordering food easy and enjoyable. Thank you for choosing DIL RESTAURANT for all your culinary cravings.</p>
+            </div>
+  
+            <div class="members">
+              <p>Our Team</p>
+              <div class="team">
+                  <div class="team-member">
+                      <img src="assets/member 1.jpeg" alt="Junior chef Mrs. Anne">
+                      <div class="member-name">Junior chef<br> Mrs. Anne</div>
+                  </div>
+                  <div class="team-member head-chef">
+                      <img src="assets/member 2.jpeg" alt="Head chef Mr. Robert">
+                      <div class="member-name">Head chef <br> Mr. Robert</div>
+                  </div>
+                  <div class="team-member">
+                      <img src="assets/member 3.jpeg" alt="Junior chef Mr. Sam">
+                      <div class="member-name">Junior chef <br> Mr. Sam</div>
+                  </div>
+              </div>
+          </div>
+        </div>
     </main>
 
     <script src="script.js"></script>

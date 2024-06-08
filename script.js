@@ -14,6 +14,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 // Function to open the login form
 function openForm() {
     document.getElementById("myForm").style.display = "block";
@@ -24,15 +31,21 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
-function validateForm() {
-    var email = document.forms["myForm"]["email"].value;
-    var password = document.forms["myForm"]["psw"].value;
-    if (email == "" || password == "") {
-        alert("Email and Password must be filled out");
+function validateLoginForm() {
+    var email = document.forms["loginForm"]["email"].value;
+    var password = document.forms["loginForm"]["psw"].value;
+
+    if (email === "" || password === "") {
+        alert("All fields must be filled out");
         return false;
     }
-    return true;
+
+    // Display success alert and prevent form submission
+    alert("Successfully logged in");
+    return false;
 }
+
+
 
 // JavaScript for slides navigation
 let slideIndex = 1;
@@ -55,4 +68,20 @@ function showSlide(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+}
+
+// Validate Order Form
+function validateOrderForm() {
+    var foodname = document.forms["orderForm"]["foodname"].value;
+    var number = document.forms["orderForm"]["number"].value;
+    var address = document.forms["orderForm"]["address"].value;
+
+    if (foodname === "" || number === "" || address === "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+
+    // Display success alert and prevent form submission
+    alert("Order placed successfully");
+    return false;
 }
