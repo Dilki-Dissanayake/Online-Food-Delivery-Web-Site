@@ -187,9 +187,25 @@
         </section>
         
 
-        <section id="order" class="section">
-            <h2>Place Your Order</h2>
-            <p>Quick and easy order process.</p>
+        <section id="order" class="order">
+            <br>
+            <div class="paragraph">
+                <h2>Order Now!</h2>
+                <p>Dive into our mouthwatering menu and order your favorites with just a few clicks. From sizzling steaks to savory pasta dishes, we've got something to satisfy every craving. Place your order now and let us bring the flavors of our kitchen straight to your doorstep.</p>
+            </div>
+
+            <div class="secform" id="Secform">
+                <form action="/action_page.php" class="form-container-new" name="myForm" onsubmit="return validateForm()" method="post">
+                    <label for="name"><b>Food Item</b></label>
+                    <input type="text" placeholder="Enter Food Item" name="foodname" required>
+                    <label for="number"><b>Contact Number</b></label>
+                    <input type="number" placeholder="Enter Contact Number" name="number" required>
+                    <label for="address"><b>Address</b></label>
+                    <input type="address" placeholder="Enter your address" name="address" required>
+                    <button type="submit" class="btn">submit</button>
+                    <button type="reset" class="btn">Reset</button>
+                </form>
+            </div>
         </section>
 
         <section id="about-us" class="section">

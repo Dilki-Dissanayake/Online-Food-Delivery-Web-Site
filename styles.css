@@ -381,3 +381,70 @@ p {
 }
 
 
+.order {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(assets/backgroundphoto.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.order .paragraph {
+  max-width: 30vw;
+  margin: 15ch   10ch 0;
+  height: 75vh;
+  border-radius: 4ch;
+
+}
+
+.order .paragraph h2 {
+  font-size: 28px;
+  margin-bottom: -4ch;
+}
+
+.order .paragraph p {
+  font-size: 18px;
+  margin-top: 15ch;
+}
+
+.order .secform {
+  width: 28vw;
+  height: 70vh;
+  margin-left: 75ch;
+  margin-top: -65ch;
+  background-color: black;
+  padding-top: 2ch;
+  border-radius: 4ch;
+
+}
+
+.order .secform label {
+  width: 25vw;
+  border: none;
+  margin: 10px;
+  padding: 2ch;
+  color: #e1dcdc;
+  
+}
+
+.order .secform input {
+  width: 22vw;
+  padding: 3ch;
+  border: none;
+  background: #f1f1f1;
+  margin: 18px;
+}
+
+.order .secform .btn {
+  background-color: #d49696;
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  width: 35%;
+  margin: 27.2px;
+}
+
+.order .secform .btn:hover {
+  background-color: #555;
+}
