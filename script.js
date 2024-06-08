@@ -1,6 +1,22 @@
 function searchFood() {
-    const query = document.getElementById('search-input').value;
-    alert(`Searching for: ${query}`);
+    // Get the input value
+    var input = document.getElementById("search-input").value.toUpperCase();
+    
+    // Get the food items
+    var foodItems = document.querySelectorAll(".food-item");
+
+    // Loop through each food item
+    for (var i = 0; i < foodItems.length; i++) {
+        var foodItem = foodItems[i];
+        var foodName = foodItem.getAttribute("data-name").toUpperCase();
+
+        // Check if the input matches the food item
+        if (foodName.indexOf(input) > -1) {
+            foodItem.style.display = "";
+        } else {
+            foodItem.style.display = "none";
+        }
+    }
 }
 
 // Smooth scroll functionality
