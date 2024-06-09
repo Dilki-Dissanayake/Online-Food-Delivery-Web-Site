@@ -6,11 +6,12 @@
     <title>Online Food Delivery</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/4e0bbfa0d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png"/>
+            <img src="assets/logo.png"/>
         </div>
         <nav class="topnav">
             <ul>
@@ -28,8 +29,10 @@
     </header>
 
     <main>
-        <section class="home" id="home">
-            <br />
+       
+
+            <section class="home" id="home">
+                <br />
             <div class="textbox">
                 <h2>Your favorite <br />food delivered <br />hot & fresh</h2>
                 <p>
@@ -44,7 +47,7 @@
                 <!-- The form -->
                 <div class="form-popup" id="myForm">
                     <div class="close">
-                        <button type="button" class="btn cancel" onclick="closeForm()">
+                        <button type="button" class="cancel" onclick="closeForm()">
                             <i class=" fas fa-xmark"></i>
                         </button>
                     </div>
@@ -201,7 +204,7 @@
                     <label for="name"><b>Food Item</b></label>
                     <input type="text" placeholder="Enter Food Item" name="foodname" required>
                     <label for="number"><b>Contact Number</b></label>
-                    <input type="number" placeholder="Enter Contact Number" name="number" required>
+                    <input type="tel" placeholder="Enter Contact Number" name="number" required>
                     <label for="address"><b>Address</b></label>
                     <input type="text" placeholder="Enter your address" name="address" required>
                     <button type="submit" class="btn">Submit</button>
@@ -235,9 +238,10 @@
                       <img src="assets/member 3.jpeg" alt="Junior chef Mr. Sam">
                       <div class="member-name">Junior chef <br> Mr. Sam</div>
                   </div>
-              </div>
+                </div>
           </div>
         </div>
+    
     </main>
 
     <footer class="footer">
@@ -245,7 +249,7 @@
             <div class="footer-info">
                 <div class="info">
                     <h3>DIL restaurant</h3>
-                    <p>16/5 Main Street</p>
+                <p>16/5 Main Street</p>
                     <p>colombo 7, Westen Province</p>
                 </div>
                 <div class="info">
@@ -259,6 +263,6 @@
     </footer>
 
     <script src="script.js"></script>
-    
+
 </body>
 </html>

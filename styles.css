@@ -1,6 +1,4 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 
 * {
   margin: 0;
@@ -9,12 +7,12 @@
 }
 
 body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 header {
   position: fixed;
-  background-color: transparent; 
+  background-color: transparent;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -24,8 +22,8 @@ header {
 }
 
 .logo img {
-  width: 150px;
-  margin-right: 20px; 
+  width: 50px;
+  margin-right: 20px;
 }
 
 nav ul {
@@ -54,7 +52,7 @@ nav ul li a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 6ch; 
+  margin-right: 6ch;
 }
 
 .search-bar input[type="text"] {
@@ -83,7 +81,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-
 .scroll {
   padding: 0%;
   margin: 0%;
@@ -98,7 +95,6 @@ section {
   scroll-snap-align: start;
 }
 
-
 .home {
   background-size: cover;
   background-position: center;
@@ -107,14 +103,14 @@ section {
   color: white;
   text-align: center;
   padding: 50px 20px;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .textbox {
-  background: rgba(0, 0, 0, 0.8); 
+  background: rgba(0, 0, 0, 0.8);
   padding: 50px;
   border-radius: 30px;
   max-width: 400px;
@@ -132,12 +128,11 @@ section {
   margin-bottom: 50px;
 }
 
-
 .button {
   border-radius: 10px;
   background-color: transparent;
   border-color: white;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 18px;
   padding: 8px;
@@ -155,7 +150,7 @@ section {
 }
 
 .button span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -171,7 +166,6 @@ section {
   opacity: 1;
   right: 0;
 }
-
 
 .form-popup {
   display: none;
@@ -201,11 +195,17 @@ section {
   padding: 2ch;
 }
 
-
 .form-container label {
-  color: black; 
-  align-self: flex-start; 
+  color: black;
+  align-self: flex-start;
   padding: 10px;
+}
+
+.cancel {
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 .close {
@@ -230,14 +230,13 @@ section {
 }
 
 .form-container .btn {
-  background-color: #04aa6d;
   color: white;
   padding: 2ch;
   border: none;
   cursor: pointer;
-  width: 30%; 
+  width: 30%;
   opacity: 0.8;
-  margin: 10px; 
+  margin: 10px;
 }
 
 .form-container .btn:hover,
@@ -310,8 +309,6 @@ p {
   height: 300px; /* Adjust as needed */
 }
 
-
-
 .img button {
   background: none;
   border: 2px solid white;
@@ -319,7 +316,6 @@ p {
   font-size: 16px;
   border-radius: 4px;
   color: white;
-  cursor: pointer;
   margin: 20px 0 0 50px;
 }
 
@@ -359,7 +355,7 @@ p {
 }
 
 .responsive {
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   margin-left: 7ch;
   margin-top: 3ch;
   height: 68vh;
@@ -369,8 +365,6 @@ p {
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  
-  
 }
 
 .responsive img {
@@ -379,7 +373,6 @@ p {
   width: 15vw;
   height: 45vh;
 }
-
 
 .order {
   height: 100vh;
@@ -392,10 +385,9 @@ p {
 
 .order .paragraph {
   max-width: 30vw;
-  margin: 15ch   10ch 0;
+  margin: 15ch 10ch 0;
   height: 75vh;
   border-radius: 4ch;
-
 }
 
 .order .paragraph h2 {
@@ -421,7 +413,8 @@ p {
   margin-bottom: 10px;
   display: block;
 }
-.form-container-new input[type=text], .form-container input[type=number], .form-container input[type=address] {
+.form-container-new input[type="text"],
+.form-container-new input[type="tel"] {
   width: 100%;
   padding: 12px;
   margin: 8px;
@@ -432,7 +425,7 @@ p {
 }
 .btn {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -454,16 +447,16 @@ p {
   width: 100%;
 }
 
-.aboutsec{
+.aboutsec {
   width: 80vw;
   height: 70vh;
-  background-color:rgba(0, 0, 0, 0.8);
-  margin:12ch 0 0 15ch ;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 12ch 0 0 15ch;
   border-radius: 4ch;
 }
 
 .about {
-  background:none;
+  background: none;
   height: 70vh;
   width: 25vw;
   margin: 12ch 3ch 0 6ch;
@@ -479,15 +472,15 @@ p {
   margin-top: 60px;
 }
 
-.members{
-  background:none;
+.members {
+  background: none;
   height: 70vh;
   width: 55vw;
   margin: -63ch 0 0 50ch;
   padding: 2ch;
 }
 
-.members p{
+.members p {
   font-size: 24px;
   margin-left: 7ch;
 }
@@ -519,8 +512,6 @@ p {
   color: white;
 }
 
-
-
 .footer {
   background-color: black;
   color: #fff;
@@ -546,7 +537,7 @@ p {
 }
 
 .info {
-  margin:  0 40px 0 40px; 
+  margin: 0 40px 0 40px;
 }
 
 .info h3 {
